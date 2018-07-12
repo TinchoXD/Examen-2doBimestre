@@ -1,33 +1,40 @@
-<form action="action_page.php">
+<h1>Esta es la seccion Login</h1>
+<a [routerLink]="['/inicio']">ir a inicio</a>
+
+<div>
+  <form action="action_page.php">
 
 
-  <div class="imgcontainer">
-    <br>
-    <img src="https://fit2work.com.au/assets/img/avatars/LoginIconAppl.png" alt="Avatar" class="avatar">
+    <div class="imgcontainer">
+      <br>
+      <img src="https://fit2work.com.au/assets/img/avatars/LoginIconAppl.png" alt="Avatar" class="avatar">
 
-  </div>
+    </div>
 
 
-  <div class="container">
-    <br>
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" minlength="5" name="uname" required>
+    <div class="container">
+      <br>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" minlength="5" name="uname" required>
 
-    
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <button type="submit">Login</button>
-    <!--<label>-->
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <!--<button type="submit">Login</button>-->
+      <a [routerLink]="['/home']"><button type="submit">Login</button></a>
+      <!--<label>-->
       <!--<input type="checkbox" checked="checked" name="remember"> Remember me-->
-    <!--</label>-->
-  </div>
+      <!--</label>-->
+    </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <!--<span class="psw">Forgot <a href="#">password?</a></span>-->
-  </div>
-</form>
+    <div class="container" style="background-color:#f1f1f1">
+
+      <a [routerLink]="['/inicio']"><button type="button" class="cancelbtn">Cancel</button></a>
+      <!--<span class="psw">Forgot <a href="#">password?</a></span>-->
+    </div>
+  </form>
+</div>
 
 
-<
+
