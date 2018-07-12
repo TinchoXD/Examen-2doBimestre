@@ -2,7 +2,7 @@
 <a [routerLink]="['/inicio']">ir a inicio</a>
 
 <div>
-  <form action="action_page.php">
+  <form action="action_page.php" (ngSubmit)="onSubmit()">
 
 
     <div class="imgcontainer">
@@ -22,7 +22,10 @@
       <input type="password" placeholder="Enter Password" name="psw" required>
 
       <!--<button type="submit">Login</button>-->
-      <a [routerLink]="['/home']"><button type="submit">Login</button></a>
+
+        <button type="submit"> <a [routerLink]="['/home']"> Login </a> </button>
+
+       <a [routerLink]="['/home']"> <button type="submit"> Login </button> </a>
       <!--<label>-->
       <!--<input type="checkbox" checked="checked" name="remember"> Remember me-->
       <!--</label>-->
