@@ -10,6 +10,7 @@ import { SOPadreComponent } from './so-padre/so-padre.component';
 import { APPHijoComponent } from './app-hijo/app-hijo.component';
 import { ModeloPapaComponent } from './modelo-papa/modelo-papa.component';
 import { ModeloHijoComponent } from './modelo-hijo/modelo-hijo.component';
+import { DetalleHijoComponent } from './detalle-hijo/detalle-hijo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ModeloHijoComponent } from './modelo-hijo/modelo-hijo.component';
     SOPadreComponent,
     APPHijoComponent,
     ModeloPapaComponent,
-    ModeloHijoComponent
+    ModeloHijoComponent,
+    DetalleHijoComponent
   ],
   imports: [
     BrowserModule,

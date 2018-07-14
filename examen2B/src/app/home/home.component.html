@@ -6,21 +6,79 @@
   <div class="col"></div>
   <div class="col"></div>
   <div class="col"></div>
-  <div class="col"> </div>
-  <div class="col"><img style="float:left; height: 100%; width: 30%"  src="https://i1.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1" />  Usuario</div>
+  <div class="col"></div>
+  <div class="col"><img style="float:left; height: 100%; width: 30%"
+                        src="https://i1.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1"/>
+    Usuario
+  </div>
   <div class="col"><a [routerLink]="['/login']">log out</a></div>
 </div>
+<br><br><br><br>
 
 <div class="row">
-  <div class="col">1 <app-so-padre> padre 1 </app-so-padre></div>
-  <div class="col">2 <app-so-padre></app-so-padre></div>
-  <div class="col">3 <app-so-padre></app-so-padre></div>
+    <div class="col">
+      <a [routerLink]="['/modeloPapa']">
+      <h2 style="text-align: center">Windows XP</h2>
+      <h3 style="text-align: center">fecha lanzamiento: 2005</h3>
+      <img style="float:left; height: 230px; width: 50%;margin-left: 30%;border-width: 5px ; border-color: black"
+           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUAzvMZueX53mtKLPt1TlexHA8Je4SRGxJOQj3o7m2tDC21Kxr"/>
+  </a>
 </div>
+
+    <div class="col">
+      <a [routerLink]="['/modeloPapa']">
+      <h2 style="text-align: center">Linux</h2>
+      <h3 style="text-align: center">fecha lanzamiento: 1992</h3>
+      <img style="float:left; height: 230px; width: 50%;margin-left: 30%;border-width: 5px ; border-color: black"
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/300px-NewTux.svg.png"/>
+      </a>
+    </div>
+
+
+
+    <div class="col">
+      <a [routerLink]="['/modeloPapa']">
+      <h2 style="text-align: center">MacOs</h2>
+      <h3 style="text-align: center">fecha lanzamiento: 2005</h3>
+      <img style="float:left; height: 230px; width: 50%;margin-left: 30%;border-width: 5px ; border-color: black"
+           src="https://tr1.cbsistatic.com/hub/i/r/2017/12/11/9fac1c13-984f-429c-83a8-1a7a286271ae/resize/770x/b8d4390e12de318439d1b9b78f33c7fe/macoshero.jpg"/>
+  </a>
+</div>
+
+
+</div>
+
+<br><br><br><br>
 <div class="row">
-  <div class="col">4 <app-so-padre></app-so-padre></div>
-  <div class="col">5 <app-so-padre></app-so-padre></div>
-  <div class="col">6 <app-so-padre></app-so-padre></div>
+
+  <div class="col">
+    <a [routerLink]="['/modeloPapa']">
+  <h2 style="text-align: center">Ubuntu</h2>
+    <h3 style="text-align: center">fecha lanzamiento: 2015</h3>
+    <img style="float:left; height: 230px; width: 50%;margin-left: 30%;border-width: 5px ; border-color: black"
+         src="data:image/png;base64,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"/>
+    </a>
+  </div>
+
+  <div class="col"><a [routerLink]="['/modeloPapa']">
+    <h2 style="text-align: center">Windows 10</h2>
+    <h3 style="text-align: center">fecha lanzamiento: 1999</h3>
+    <img style="float:left; height: 230px; width: 50%;margin-left: 30%;border-width: 5px ; border-color: black"
+         src="https://www.elkhornservice.com/wp-content/uploads/Windows-10-logo-e1502132803317.png"/> </a>
+  </div>
+
+
+  <div class="col">
+    <a [routerLink]="['/modeloPapa']">
+      <h2 style="text-align: center">Andorid</h2>
+      <h3 style="text-align: center">fecha lanzamiento: 1999</h3>
+      <img style="float:left; height: 230px; width: 50%;margin-left: 30%;border-width: 5px ; border-color: black"
+           src="https://androidzone.org/wp-content/uploads/2012/11/logo-android2-720x540.jpg"/>
+    </a>
+  </div>
+
 </div>
 
 <br><br><br>
+
 

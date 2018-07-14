@@ -1,19 +1,27 @@
 
 
-<div class="row">
-  <div class="col">
-    <app-so-padre>
-  </app-so-padre>
+<app-so-padre></app-so-padre>
+
+<div>
+  <div class="row">
+    <div class="col-md-6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTscvKXYrsSJBaorwMD0UoNXCQuRpmoghOXBunzEpjrE13R-Ha5cg" alt="SO" style="margin-left: 50%"></div>
+    <div class="col-md-6" style="text-align: left"><h2><br><p>Nombre:</p><p>Descripcion:</p></h2> </div>
+
   </div>
+
 </div>
+
+<h1></h1>
+
+<h1> </h1>
 <div class="row"></div>
   <div class="col">
     <div>
       <div class="row">
-        <div class="col"><app-app-hijo></app-app-hijo></div>
-        <div class="col"><app-app-hijo></app-app-hijo></div>
-        <div class="col"><app-app-hijo></app-app-hijo></div>
-        <div class="col"><app-app-hijo></app-app-hijo></div>
+        <div class="col"><a [routerLink]="['/modeloPapa/modeloHijo']"><app-app-hijo></app-app-hijo></a></div>
+        <div class="col"><a [routerLink]="['/modeloPapa/modeloHijo']"><app-app-hijo></app-app-hijo></a></div>
+        <div class="col"><a [routerLink]="['/modeloPapa/modeloHijo']"><app-app-hijo></app-app-hijo></a></div>
+        <div class="col"><a [routerLink]="['/modeloPapa/modeloHijo']"><app-app-hijo></app-app-hijo></a></div>
       </div>
 
     </div>
